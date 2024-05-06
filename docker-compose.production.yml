@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  dc_app_prod.server:
+    image: fk0udoabt/dcapp:version1.2
+    container_name: dcapp
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: dc_app.Server/Dockerfile
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=oDKBf5bHhjkzSRPEc05j3
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/root/.aspnet/https2/dc_app.Server.pfx
+      - DB_CONNECTION_STRING=Server=host.docker.internal,1433;User Id=SA;Password=Password123!; MultipleActiveResultSets=true; Encrypt=false
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+    volumes:
+      - C:\Users\Starstep\.aspnet\https:/root/.aspnet/https2/

@@ -1,0 +1,25 @@
+.AppIcon {
+    padding-inline: 8px;
+    padding-block:8px;
+    display:flex;
+    gap: 3px;
+}
+
+.AppIcon > img {
+    width:55px;
+    height:55px;
+}
+
+.text-div {
+    display:grid;
+    grid-template-rows: 1fr auto;
+    line-height:0px;
+}
+.text-div > h1 {
+    font-size:2rem;
+}
+
+.text-div > p {
+    margin-top:-5px;
+    text-align:end;
+}

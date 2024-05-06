@@ -1,0 +1,42 @@
+.user-form-card {
+  width: 300px;
+  padding: 30px;
+  padding-top: 50px;
+
+  position:absolute;
+  left:50%;
+  margin-left:-150px;
+  top:140px;
+
+  display:flex;
+  justify-content:center;
+}
+
+.user-form-title {
+    padding-bottom: 20px;
+    margin-bottom:30px;
+    align-self:center;
+}
+.user-form-input {
+    width: 100%;
+    margin: 0 auto;
+}
+.user-form-button {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom:30px
+}
+
+.userMessage {
+    text-align:center;
+    color:red;
+}
+
+.form-bottom {
+}
+
+.spinner {
+    display:flex;
+    margin-inline:auto;
+    margin-bottom:1rem;
+}

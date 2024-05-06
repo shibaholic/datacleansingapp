@@ -1,0 +1,52 @@
+.SpreadsheetNodeListDiv {
+    display: flex;
+    box-sizing: content-box;
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    z-index:-9999;
+}
+
+.nodeNameSpan {
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    z-index: 1;
+}
+
+.nodeNameInput {
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.spreadsheetCard {
+    position: relative;
+    z-index: 0;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.cardBody {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 7px !important;
+}
+
+.cardButtonsDiv {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardButtonsDiv > * {
+    z-index:9999;
+}

@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.Dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#d9d9d9;
+}
+
+.TopBar {
+    width: 100%;
+    height: 47px;
+    padding-left: 20px;
+    margin-top: 10px;
+    display: flex;
+
+    z-index: 2; /* bootstrap dropdown in the user profile needs this to be visible over the mainpanel */
+}
+
+.TopBar > .AppIcon {
+    padding-block:0;
+    padding-inline:0;
+}
+
+.ProfileDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: inherit;
+}
+
+.MainPanel {
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction: row;
+}
+
+.SidePanel {
+  min-width: 180px;
+  height: auto;
+  margin:20px;
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.MySpreadsheets {
+  width: 100%;
+  margin:20px;
+  margin-left:0px;
+  background-color:white;
+  border-radius: 15px;
+
+  display:flex;
+  flex-direction: column;
+}
+
+.MySpreadsheets > h3 {
+  margin:1rem;
+}
+
+.SpreadsheetDiv {
+    overflow-y:auto;
+}

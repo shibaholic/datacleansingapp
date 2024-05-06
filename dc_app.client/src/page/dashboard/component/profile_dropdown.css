@@ -1,0 +1,35 @@
+.profile-circle {
+    display:flex;
+    height:inherit;
+    align-self:flex-start;
+
+    text-align:center;
+}
+
+.profile-name-div {
+    display: table;
+    height: inherit;
+    width: 100%;
+    text-align: center;
+
+    margin-right:10px;
+}
+
+.profile-name {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.profile-img {
+    height: 100%;
+}
+
+.profile-dropdown {
+    position: absolute;
+    transform: translate(-160px, 50px);
+}
+
+.dropdown-container {
+    position:relative;
+    z-index:9999;
+}

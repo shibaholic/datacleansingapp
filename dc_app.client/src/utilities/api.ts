@@ -1,0 +1,1 @@
+export const api_url = import.meta.env.VITE_API; // VITE_LOCAL_API VITE_AZURE_API
