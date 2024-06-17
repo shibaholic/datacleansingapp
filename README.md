@@ -2,6 +2,16 @@
 Student project to build a full-stack web application hosted in the cloud.
 Allows users to perform data cleansing operations such as data deduplication and collaborative editing on uploaded spreadsheets.
 
+Features include:
+- username & password login using cookie-based authentication
+- upload XML spreadsheet file
+- dashboard to organize uploaded spreadsheets
+- able to share spreadsheets with other users
+- server push events using long polling
+- see edits by other users on a shared spreadsheet in real-time
+- run a deterministic data deduplication algorithm to clean spreadsheet data
+- create validation checkboxes for collaborative manual validation
+
 ## Screenshots
 
 Landing page
@@ -21,3 +31,5 @@ Spreadsheet view with right panel open
 
 ## Database Entity Relationship Diagram
 ![entity relationship diagram](https://github.com/shibaholic/datacleansingapp/assets/148887683/99e9a301-03ce-4996-8e91-518f4d7c0014)
+
+Since the spreadsheets would have an unknown amount of columns and rows...
