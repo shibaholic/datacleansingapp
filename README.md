@@ -18,3 +18,6 @@ Spreadsheet view with right panel open
 
 ## Architecture and technologies
 ![High-level technologies](https://github.com/shibaholic/datacleansingapp/assets/148887683/58305886-fd32-4f7a-8c1d-f7d2f15c367a)
+
+## Database Entity Relationship Diagram
+![entity relationship diagram](https://github.com/shibaholic/datacleansingapp/assets/148887683/99e9a301-03ce-4996-8e91-518f4d7c0014)
